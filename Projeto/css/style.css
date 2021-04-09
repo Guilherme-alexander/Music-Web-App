@@ -16,18 +16,40 @@ body{
 	margin:0;
 	font-family: "Raleway", sans-serif;
 }
+/* background:linear-gradient(to bottom,#338ce0,#dff1ff); */
+/* background:linear-gradient(to bottom,#e03375,#dff1ff); */
+/* background:linear-gradient(to bottom,#211eca,#dff1ff); */
+/* background-image: linear-gradient(45deg, rgb(140, 202, 165),rgb(198,159,197)); */
+.clear{
+	clear:both;
+}
 
 img{
 	max-width:100%;
 }
 
 .container{
-	background-color:var(--background);
+	/* background-color:var(--background); */
 	display:flex;
 	align-items:center;
 	justify-content:center;
 	min-height:100vh;
 }
+
+.container.normal{
+	background-color:var(--background);
+}
+.container.aqua{
+	background:linear-gradient(to bottom,#338ce0,#dff1ff);
+}
+.container.red{
+	background:linear-gradient(to bottom,#e03375,#dff1ff);
+}
+.container.blue{
+	background:linear-gradient(to bottom,#211eca,#dff1ff);
+}
+
+
 
 .player{
 	width:300px;
@@ -62,7 +84,16 @@ img{
 }
 
 .player-btn:active{
+	color:#5c87fe;
 	box-shadow: inset -8px -8px 20px #fff9, inset -5px -5px 6px #fff9, inset 8px 8px 20px #0003, inset 5px 5px 6px #0001;
+}
+
+.player-btn.blue:active{
+	color:white;
+	box-shadow:
+	inset -8px -8px 18px #bfd8f67c,  
+	inset 8px 8px 20px #0003, 
+	inset 5px 5px 6px #0001;
 }
 
 .player-btn-small{
@@ -132,7 +163,7 @@ img{
 .audio-duration{
 	margin-top:-30px;
 	display:flex;
-	width:78%;
+	width:80%;
 	font-size:10px;
 	font-weight:600;
 	color:#a1a1a1;
@@ -142,10 +173,10 @@ img{
 .start{
 	flex: 1;
 }
-/* 
+
 .player-audio{
-	 visibility: hidden;
-} */
+	visibility: hidden;
+}
 
 .player-btn-medium{
 	min-width:70px;
@@ -160,6 +191,163 @@ img{
 .hide{
 	display:none;
 }
+
+.player2.ativo{
+	width:350px;
+	height:200px;
+	margin-left: -330px;
+	position: relative;
+	/* left: 413px;
+	top: -164px; */
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	border-radius: 12px;
+	background-color:var(--background);
+	box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6),
+    -9px -9px 16px rgba(255, 255, 255, 0.5);
+}
+
+.painel.ativo{
+	display:flex;
+	align-items:center;
+	justify-content: center;
+	
+}
+
+div.one:hover,
+div.two:hover,
+div.three:hover{
+	transition:0.5s;
+	transform:scale(1.6);
+}
+
+.painel div.one.ativo{
+	width:100px;
+	height:100px;
+	margin:4px;
+	border-radius:50%;
+	border:4px solid #4591ad;
+	cursor: pointer;
+	background-image:url('../imagens/blue.jpg');
+	background-size:cover;
+	background-repeat: no-repeat;
+}
+
+
+.painel div.two.ativo{
+	width:100px;
+	height:100px;
+	margin:4px;
+	border-radius:50%;
+	border:4px solid #e03375;
+	cursor: pointer;
+	background-image:url('../imagens/fox.jpg');
+	background-size:cover;
+	background-repeat: no-repeat;
+}
+
+.painel div.three.ativo{
+	width:100px;
+	height:100px;
+	margin:4px;
+	border-radius:50%;
+	cursor: pointer;
+	border:4px solid #8483da;
+	background-image:url('../imagens/charlotte-anime.jpg');
+	background-size:cover;
+	background-repeat: no-repeat;
+}
+
+.one div{
+	width:20px;
+	height:20px;
+	background-color:#338ce0;
+	border:3px solid var(--gray);
+	border-radius:50%;
+}
+.two div{
+	width:20px;
+	height:20px;
+	background-color:#e03375;
+	border:3px solid var(--gray);
+	border-radius:50%;
+}
+.three div{
+	width:20px;
+	height:20px;
+	border:3px solid var(--gray);
+	background-color:blue;
+	border-radius:50%;
+}
+
+.painelControles.ativo{
+	width:250px;
+	height:100px;
+	margin-left: -170px;
+	position: relative;
+	left: 153px;
+	top: -224px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	border-radius: 12px;
+	background-color:var(--background);
+	box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6),
+    -9px -9px 16px rgba(255, 255, 255, 0.5);
+	/* transition:0.5s; */
+}
+
+.center.ativo{
+	position: relative;
+	/* flex-direction:column; */
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	
+}
+
+.center a{
+	min-width:70px;
+	height:50px;
+	text-decoration:none;
+	background-color:var(--background);
+	align-items:center;
+	margin-top:5px 6px;
+	color:var(--gray);
+	box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6),
+    -9px -9px 16px rgba(255, 255, 255, 0.5);
+}
+.fa-volume-up, .fa-volume-down, .fa-volume-off{
+display: flex;
+flex-direction: row;
+align-items:center;
+justify-content: center;
+position: relative;
+left: 1px;
+top: 17px;
+}
+
+.volume1{
+	display:none;
+}
+.volume2{
+	display:none;
+}
+.volume3{
+	display:none;
+}
+.volume1.ativo{
+	display:block;
+}
+.volume2.ativo{
+	display:block;
+}
+.volume3.ativo{
+	display:block;
+}
+
+
 audio{
 	margin-top:20px;
 	margin-bottom:10px;
@@ -171,7 +359,10 @@ audio::-webkit-media-controls-play-button {
 audio::-webkit-media-slider-thumb {
     display:none;
 }
-/* não liguem para isso foram meu testes */
+
+/* APLICANDO EFEITO NO audio::-webkit ESTILIZANDO */
+/*                                                */
+/*
 audio::-webkit-media-controls-mute-button{display:none;}
 audio::-webkit-media-controls-play-button{display:none;}
 audio::-webkit-media-controls-timeline-container{display:none;}
@@ -185,8 +376,6 @@ audio::-webkit-media-controls-fullscreen-button{display:none;}
 audio::-webkit-media-controls-rewind-button{display:none;}
 audio::-webkit-media-controls-return-to-realtime-butto{display:none;}
 audio::-webkit-media-controls-timeline{display:block;}
-/* teste e aprendizado */
-
 audio::-webkit-media-controls-play-button,
 audio::-webkit-media-controls-mute-button,
 audio::-webkit-media-controls-volume-slider {
@@ -196,10 +385,9 @@ audio::-webkit-media-controls-panel {
 	background:#e0e5ec;
   	border-radius: 0;
 }
-
 audio::-webkit-media-controls-timeline {
 	background: #e0e5ec;
 	height:1px;
   	margin-left: 15px;
-}
+} */
 
