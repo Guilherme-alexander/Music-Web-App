@@ -370,7 +370,9 @@ audio::-webkit-media-slider-thumb {
 	.container{
 		transform:scale(1.1);
 	}
-	
+	.player{
+		margin-top:5px;
+	}
 	.player2.ativo{
 		width:350px;
 		height:200px;
@@ -383,13 +385,27 @@ audio::-webkit-media-slider-thumb {
 		align-items:center;
 		border-radius: 12px;
 	}
+	.player-btn-medium{
+		min-width:50px;
+		min-height:50px;
+	}
+	.player-level{
+		margin-top:20px;
+	}
+	.player-album{
+		width:120px;
+	}
+	audio{
+		margin-top:0px;
+    	margin-bottom:0px;
+	}
 	.painelControles.ativo{
 		width:85px;
-		height:210px;
+		height:160px;
 		margin-left: -70px;
 		position: relative;
 		left: -20px;
-		top: -90px;
+		top:-60px;
 		display:flex;
 		justify-content:center;
 		align-items:center;
@@ -403,14 +419,14 @@ audio::-webkit-media-slider-thumb {
 		align-items:center;
 	}
 	.center a{
-		min-width:60px;
-		height:50px;
+		min-width:40px;
+		height:40px;
 		align-items:center;
 		margin-top:5px;
 	}
 
 }
-@media all and (max-height:506px){
+@media all and (max-height:400px){
 	.container{
 		transform:scale(0);
 		position: absolute;
@@ -418,6 +434,7 @@ audio::-webkit-media-slider-thumb {
 		left:50%;
 		transform: translate(-50%,-50%);
 	}
+
 }
 
 /* APLICANDO EFEITO NO audio::-webkit ESTILIZANDO */
