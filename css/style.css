@@ -372,6 +372,7 @@ audio::-webkit-media-slider-thumb {
 	}
 	.player{
 		margin-top:5px;
+		transform:scale(1.2);
 	}
 	.player2.ativo{
 		width:350px;
