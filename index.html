@@ -2,7 +2,8 @@
 <html lang="pt-br">
 <head>
 	<meta charset="utf-8">
-	<meta nome="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
+	<meta name="viewport" content= "width=device-width, initial-scale=1.0">
+
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 	<link href="css/style.css" type="text/css" rel="stylesheet">
 	<title>Projeto 27 - Musica</title>
@@ -86,7 +87,22 @@
 		</div><!--painelControles-->
 	</div><!--container-->
 
-	
+	<script>
+		/* JavaScript Media Queries */
+	if (matchMedia) {
+	const mq = window.matchMedia("(min-width: 500px)");
+	mq.addListener(WidthChange);
+	WidthChange(mq);
+	}
+
+	// media query change
+	function WidthChange(mq) {
+
+	const msg = (mq.matches ? "more" : "less") + " than 500 pixels";
+	document.getElementById("current").firstChild.nodeValue = msg;
+
+	}
+	</script>
 	<script type="text/javascript" src="js/scriptcontrols.js"></script>
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>

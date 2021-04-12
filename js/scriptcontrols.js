@@ -104,7 +104,10 @@ var i = 0;
         audio.play();
         
         --i;
-        if( i >= musicas.length ) i = 0;
+
+        if( i <= 0 ) i = 0;
+        if( i <= musicas.length ) i = 0;
+       
     }
 
  
