@@ -15,6 +15,7 @@
 body{
 	margin:0;
 	font-family: "Raleway", sans-serif;
+	height:100%;
 }
 /* background:linear-gradient(to bottom,#338ce0,#dff1ff); */
 /* background:linear-gradient(to bottom,#e03375,#dff1ff); */
@@ -287,10 +288,10 @@ div.three:hover{
 .painelControles.ativo{
 	width:250px;
 	height:100px;
-	margin-left: -170px;
-	position: relative;
-	left: 153px;
-	top: -224px;
+	position:relative;
+	margin-left:-100px;
+	left:85px;
+	top:-220px;
 	display:flex;
 	justify-content:center;
 	align-items:center;
@@ -303,7 +304,6 @@ div.three:hover{
 
 .center.ativo{
 	position: relative;
-	/* flex-direction:column; */
 	display:flex;
 	justify-content:center;
 	align-items:center;	
@@ -368,10 +368,22 @@ audio::-webkit-media-slider-thumb {
 	display:none;
 	}
 	.container{
-		
-		transform:scale(1.5);
+		transform:scale(1.4);
 	}
-
+	.player{
+	}
+	.player2.ativo{
+		width:350px;
+		height:200px;
+		margin-left: -330px;
+		position: relative;
+		left: 0px;
+		top: -64px;
+		display:flex;
+		justify-content:center;
+		align-items:center;
+		border-radius: 12px;
+	}
 	.painelControles.ativo{
 		width:85px;
 		height:210px;
@@ -396,9 +408,17 @@ audio::-webkit-media-slider-thumb {
 		height:50px;
 		align-items:center;
 		margin-top:5px;
-
 	}
 
+}
+@media all and (max-height:506px){
+	.container{
+		transform:scale(0);
+		position: absolute;
+		top:52%;
+		left:50%;
+		transform: translate(-50%,-50%);
+	}
 }
 
 /* APLICANDO EFEITO NO audio::-webkit ESTILIZANDO */
