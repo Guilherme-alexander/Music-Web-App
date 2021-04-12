@@ -306,8 +306,7 @@ div.three:hover{
 	/* flex-direction:column; */
 	display:flex;
 	justify-content:center;
-	align-items:center;
-	
+	align-items:center;	
 }
 
 .center a{
@@ -316,7 +315,7 @@ div.three:hover{
 	text-decoration:none;
 	background-color:var(--background);
 	align-items:center;
-	margin-top:5px 6px;
+	margin-top:5px;
 	color:var(--gray);
 	box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6),
     -9px -9px 16px rgba(255, 255, 255, 0.5);
@@ -363,8 +362,49 @@ audio::-webkit-media-slider-thumb {
     display:none;
 }
 
+@media screen and (max-width:850px){
+/*BugScroll*/
+::-webkit-scrollbar{
+	display:none;
+}	
+	.container{
+		transform:scale(1.4);
+		max-height:950px;	
+	}
+
+	.painelControles.ativo{
+			width:85px;
+			height:210px;
+			margin-left: -170px;
+			position: relative;
+			left: 80px;
+			top: -90px;
+			display:flex;
+			justify-content:center;
+			align-items:center;
+			border-radius: 12px;
+	}
+	.center.ativo{
+		position: relative;
+		flex-direction:column;
+		display:flex;
+		justify-content:center;
+		align-items:center;
+	}
+	.center a{
+		min-width:60px;
+		height:50px;
+		text-decoration:none;
+		background-color:var(--background);
+		align-items:center;
+		margin-top:5px;
+		color:var(--gray);
+	}
+
+}
+
 /* APLICANDO EFEITO NO audio::-webkit ESTILIZANDO */
-/*                                                */
+
 /*
 audio::-webkit-media-controls-mute-button{display:none;}
 audio::-webkit-media-controls-play-button{display:none;}
