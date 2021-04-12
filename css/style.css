@@ -83,17 +83,17 @@ img{
 	color:var(--gray);
 }
 
-.player-btn.blue{
-	color:black;
-}
-
 .player-btn:active{
 	color:#5c87fe;
 	box-shadow: inset -8px -8px 20px #fff9, inset -5px -5px 6px #fff9, inset 8px 8px 20px #0003, inset 5px 5px 6px #0001;
 }
 
-.player-btn.blue:active{
+.player-btn.blue{
 	color:white;
+}
+
+.player-btn.blue:active{
+	/* color:var(--gray); */
 	box-shadow:
 	inset -8px -8px 18px #bfd8f67c,  
 	inset 8px 8px 20px #0003, 
