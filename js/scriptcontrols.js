@@ -13,7 +13,6 @@ var i = 0;
 			 ogg:'the_godfather_main_title.ogg',
 			  titulo:'30 deep grimeyy', 
 			  autor:'Rockstar'},
- 
 
 			{mp3:'som/Xenial - Lost  2.mp3',
 			 ogg:'the_godfather_main_title.ogg',
@@ -25,11 +24,25 @@ var i = 0;
 			  titulo:'Sad and Sober',
 			   autor:'Ellit-Sad'},
 
-			   {mp3:'som/Capital Cities  Safe And Sound  TraduoLegendado.mp3',
+			{mp3:'som/Capital Cities  Safe And Sound  TraduoLegendado.mp3',
 			 ogg:'the_godfather_main_title.ogg',
 			  titulo:'Capital Cities',
-			   autor:'Safe And Sound'}
+			   autor:'Safe And Sound'},
 
+            {mp3:'som/Gabbie June - American Dream (Not Your Dope Remix).mp3',
+			 ogg:'the_godfather_main_title.ogg',
+			  titulo:'American Dream',
+			   autor:'Gabbie June'},
+
+            {mp3:'som/idkjack - In My Head (ft. luvjools).mp3',
+             ogg:'the_godfather_main_title.ogg',
+              titulo:'In My Head',
+                autor:'idkjack'},
+
+            {mp3:'som/akon - lonely (legendado).mp3',
+            ogg:'the_godfather_main_title.ogg',
+                titulo:'lonely',
+                autor:'akon'}
             ]; 
 
     audio = document.getElementById('audio'); 
