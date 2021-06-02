@@ -14,7 +14,7 @@ var i = 0;
 			  titulo:'30 deep grimeyy', 
 			  autor:'Rockstar'},
 
-			{mp3:'som/Xenial - Lost  2.mp3',
+			{mp3:'som/Xenial-Lost2.mp3',
 			 ogg:'the_godfather_main_title.ogg',
 			  titulo:'Lost', 
 			  autor:'Xenial'},
@@ -34,15 +34,20 @@ var i = 0;
 			  titulo:'American Dream',
 			   autor:'Gabbie June'},
 
-            {mp3:'som/idkjack - In My Head (ft. luvjools).mp3',
+            {mp3:'som/idkjack-In My Head.mp3',
              ogg:'the_godfather_main_title.ogg',
               titulo:'In My Head',
                 autor:'idkjack'},
 
-            {mp3:'som/akon - lonely (legendado).mp3',
+            {mp3:'som/akon - lonely.mp3',
             ogg:'the_godfather_main_title.ogg',
                 titulo:'lonely',
-                autor:'akon'}
+                autor:'akon'},
+
+            {mp3:'som/y2mate.com - Shadows in my room Feat. Vict molina.mp3',
+            ogg:'the_godfather_main_title.ogg',
+            titulo:'Feat. Vict molina',
+                autor:'TikTok'}
             ]; 
 
     audio = document.getElementById('audio'); 
