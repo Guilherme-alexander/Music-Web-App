@@ -330,25 +330,13 @@ left: 1px;
 top: 17px;
 }
 
-button.doar{
+form.doar{
 	transition:1s;
-	width:120px;
-	height:40px;
-	border:none;
-	background-color:black;
-	color:white;
-	font-family: Arial, Helvetica, sans-serif;
 	font-weight:bold;
 	position: absolute;
-	float:center;
 	left:50%;
 	top:90%;
 	transform:translate(-50%,-50%);
-}
-
-button.doar:hover{
-	background-color:#338ce0;
-	border:1px solid #338ce0;
 }
 
 .volume1{
