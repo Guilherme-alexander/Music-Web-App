@@ -17,16 +17,14 @@ body{
 	font-family: "Raleway", sans-serif;
 	height:100%;
 }
-/* background:linear-gradient(to bottom,#338ce0,#dff1ff); */
-/* background:linear-gradient(to bottom,#e03375,#dff1ff); */
-/* background:linear-gradient(to bottom,#211eca,#dff1ff); */
-/* background-image: linear-gradient(45deg, rgb(140, 202, 165),rgb(198,159,197)); */
+
 .clear{
 	clear:both;
 }
 
 img{
 	max-width:100%;
+	object-fit:cover;
 }
 
 .container{
@@ -434,6 +432,13 @@ audio::-webkit-media-slider-thumb {
 		align-items:center;
 		margin-top:5px;
 	}
+	.container{
+		/* background-color:var(--background); */
+		display:flex;
+		align-items:center;
+		justify-content:center;
+		min-height:100vh;
+	}
 
 }
 @media all and (max-height:400px){
@@ -449,8 +454,8 @@ audio::-webkit-media-slider-thumb {
 
 /* APLICANDO EFEITO NO audio::-webkit ESTILIZANDO */
 
-/*
-audio::-webkit-media-controls-mute-button{display:none;}
+
+/* audio::-webkit-media-controls-mute-button{display:none;}
 audio::-webkit-media-controls-play-button{display:none;}
 audio::-webkit-media-controls-timeline-container{display:none;}
 audio::-webkit-media-controls-current-time-display{display:none;}
@@ -477,4 +482,5 @@ audio::-webkit-media-controls-timeline {
 	height:1px;
   	margin-left: 15px;
 } */
+
 

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content= "width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link href="css/style.css" type="text/css" rel="stylesheet">
+	<title>Projeto 27 - Musica</title>
+</head>
+<body>
+	
+	<div class="container">
+		<div class="player">
+			<div class="player-controls">
+
+				<div onclick="voltarInicio()" class="player-btn player-btn-small">
+					<i class="fa fa-arrow-left" aria-hidden="true"></i>
+				</div><!--player-btn player-btn-small-->
+
+				<h5 class="player-title">Playing now</h5>
+
+				<div onclick="volume();" class="volumes player-btn player-btn-small">
+					<i class="fa fa-bars" aria-hidden="true"></i>
+				</div><!--player-btn player-btn-small-->
+
+			</div><!--player-controls-->
+
+			<div class="player-album">
+				<img onclick="menuimg();backgroundNormal();" class="player-img" src="imagens/charlotte-anime.jpg" alt="album Cover" >
+			</div>
+
+			<h2 id="nome_autor" class="player-artist">Play music</h2>
+			<h3 id="nome_musica" class="player-som">aperte o play</h3>
+
+			<input id="barra_progresso" class="player-level" type="range" value="0" min="0" max="100">
+
+			<div class="audio-duration">
+				<div id="tempo_atual" class="start">00:01</div>
+				<div id="tempo_total" class="end">00:02:30</div>
+			</div>
+
+			<audio class="player-audio music" controls>
+				<source src="" type="audio/mp3">
+				<source src="" type="audio/ogg">
+				<source src="" type="audio/mpeg">
+				Seu navegador não possui suporte ao elemento audio
+			</audio>
+
+			<div class="player-controls">
+				<div class="next player-btn player-btn-medium">
+					<i class="fa fa-backward" aria-hidden="true"></i>
+				</div>
+
+				<div class="PlayPause player-btn player-btn-medium blue">
+					<i class="fa fa-play play-btn"" aria-hidden="true"></i>
+				</div>
+
+				<div class="prev player-btn player-btn-medium">
+					<i class="fa fa-forward" aria-hidden="true"></i>
+				</div>
+			</div><!--player-controls-->
+
+		</div><!--player-->
+
+		<div class="player2">
+			<div class="painel">
+				<div class="one" onclick="imgSlider('imagens/blue.jpg');sair();backgroundFundo1();"></div>
+				<div class="two" onclick="imgSlider('imagens/fox.jpg');sair();backgroundFundo2()"></div>
+				<div class="three" onclick="imgSlider('imagens/charlotte-anime.jpg');sair();backgroundFundo3()"></div>
+			</div><!--painel-->
+
+			<!-- <div class="clear"></div> -->
+		</div><!--player2-->
+		<div class="clear"></div>
+
+		<div class="painelControles">
+			<div class="center">
+				<a class="volume1" href="#" onclick="aumentar_volume()"><i class="fa fa-volume-up" aria-hidden="true"></i></a>
+
+				<a class="volume2" href="#" onclick="diminuir_volume()"><i class="fa fa-volume-down" aria-hidden="true"></i></a>
+
+				<a class="volume3" href="#" onclick="mute()"> <i class="fa fa-volume-off" aria-hidden="true"></i></a>
+			</div>
+			<!-- <div class="clear"></div> -->
+		</div><!--painelControles-->
+	</div><!--container-->
+	
+	<div class="clear"></div><!-- clear -->
+
+	<script type="text/javascript" src="js/scriptcontrols.js"></script>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
