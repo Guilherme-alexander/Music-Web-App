@@ -32,13 +32,21 @@ const songList = [
      songNameMusic:'Sad and Sober',
      songName:'Ellit'},
 
-    {path:'som/Twenty_Carneyval Mashup_TikTok Mashup.mp3',  songNameMusic:'Twenty_Carneyval',
+    {path:'som/Twenty_Carneyval Mashup_TikTok Mashup.mp3',  
+    songNameMusic:'Twenty_Carneyval',
     songName:'Ellit'},
 
-    {path:'som/Capital Cities  Safe And Sound  TraduoLegendado.mp3',  songNameMusic:'Capital Cities  Safe And Sound',
+    {path:'som/Capital Cities  Safe And Sound  TraduoLegendado.mp3',  
+    songNameMusic:'Capital Cities  Safe And Sound',
     songName:'TraduoLegendado'},
 
-    
+    {path:'som/som/All TikTok Mashup [ JVKE - Upside Down ] _ Buttercup x Hood Baby TikTok Remix.mp3',
+    songNameMusic:'All TikTok Mashup TikTok Remix',
+    songName:'JVKE'},
+
+    {path:'som/idkjack-In My Head.mp3',  
+    songNameMusic:'My Head',
+    songName:'kjack'},
     
 ];
 
